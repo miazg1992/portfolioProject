@@ -13,19 +13,14 @@
     "url": "git+https://github.com/doman89/react-boilerplate.git"
   },
   "keywords": [
-    "react",
-    "boilerplate",
-    "typescript",
-    "scss",
-    "eslint",
-    "configuration"
+    "gallery"
   ],
-  "author": "Mateusz \"doman89\" Domanski",
+  "author": "Wioletta Miazga",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doman89/react-boilerplate/issues"
+    "url": "https://github.com/miazg1992/galeria.git"
   },
-  "homepage": "https://github.com/doman89/react-boilerplate#readme",
+  "homepage": "https://github.com/miazg1992/galeria.git#readme",
   "devDependencies": {
     "@namics/stylelint-bem": "^7.0.0",
     "@types/react": "^18.0.17",

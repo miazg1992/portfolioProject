@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "alwaysStrict": true,
-    "charset": "utf8",
+    // "charset": "utf8",
     "allowJs": true,
     "checkJs": true,
     "declaration": false,
@@ -10,7 +10,10 @@
     "experimentalDecorators": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "lib": ["es2020", "DOM"],
+    "lib": [
+      "es2020",
+      "DOM"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "outDir": "build",
@@ -19,7 +22,12 @@
     "sourceMap": true,
     "strict": true,
     "target": "ES2015",
-    "typeRoots": ["./@types"]
+    "typeRoots": [
+      "./@types"
+    ]
   },
-  "include": ["**/src/**/*.ts", "**/src/**/*.tsx"]
+  "include": [
+    "**/src/**/*.ts",
+    "**/src/**/*.tsx"
+  ]
 }
