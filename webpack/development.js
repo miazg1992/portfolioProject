@@ -14,38 +14,33 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.module\.s(a|c)ss$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              modules: {
-                localIdentName: "[local]",
-              },
-            },
-          },
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true,
-            },
-          },
-        ],
+        test: /\.txt$/,
+        use: 'raw-loader'
       },
       {
-        test: /\.(s(a|c)ss|css)$/,
-        exclude: /\.module.(s(a|c)ss)$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true,
-            },
-          },
-        ],
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(sass|scss)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(jpg|png|svg|gif|jpeg)$/,
+        use: 'file-loader',
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        options: {
+          presets: [
+            ["@babel/preset-env", { useBuiltIns: 'usage', corejs: "2.0.0" }]
+          ],
+          plugins: [
+            "@babel/plugin-proposal-class-properties"
+          ]
+        }
       },
     ],
   },
