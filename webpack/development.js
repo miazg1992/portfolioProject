@@ -23,11 +23,22 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader',
+          { loader: 'css-loader', options: { url: false } },
+          'sass-loader'
+        ]
       },
       {
-        test: /\.(jpg|png|svg|gif|jpeg)$/,
-        use: 'file-loader',
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+            }
+          },
+        ],
+        type: 'javascript/auto'
       },
 
     ],

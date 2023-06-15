@@ -29,7 +29,7 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
+        test: /\.(jpg|png|eot|ttf|woff|woff2)$/,
         use: {
           loader: "file-loader",
           options: {
