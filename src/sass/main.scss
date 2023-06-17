@@ -1,8 +1,23 @@
-@import "variables";
+@import "custom";
 
 @import "bootstrap/scss/bootstrap";
 
 @import "reset";
 @import "header";
 
-// @import "typography";
+//IMPORT THE COMPONENTS
+@import 'components/animations';
+@import 'components/button';
+@import 'components/mixins';
+@import 'components/typography';
+
+//importPORT THE SECTIONS
+@import 'sections/navbar';
+@import 'sections/intro-sections';
+@import 'sections/companies';
+@import 'sections/services';
+@import 'sections/testimonials';
+@import 'sections/faq';
+@import 'sections/portfolio';
+@import 'sections/get-started';
+@import 'sections/footer';
