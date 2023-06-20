@@ -1,3 +1,68 @@
+@import '../components/mixins';
+@import '../custom';
+
 .portfolio {
-    background-color: #5d54df;
+    // background-color: lighten($color: $primary, $amount: 20%);
+    padding: 4rem 0;
+
+    button {
+        text-transform: capitalize;
+    }
+
+    .portfolio-box {
+        position: relative;
+        width: 100%;
+        max-height: 10.5rem;
+        overflow: hidden;
+        margin-bottom: 1.2rem;
+        border-top: 0.5rem solid $primary;
+
+
+        img {
+            width: 100%;
+            // height: 100%;
+        }
+
+        .portfolio-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba($primary, 0.9);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+
+
+
+            .caption {
+                text-align: center;
+                color: $white;
+                @include absoluteCenter;
+
+                h4 {
+                    text-transform: uppercase;
+                    display: block;
+                }
+            }
+
+
+        }
+
+        &:hover {
+
+            img {
+                transform: scale(1.2);
+                @include transitionProperty;
+            }
+
+            .portfolio-info {
+                opacity: 1;
+                visibility: visible;
+                @include transitionProperty;
+            }
+
+        }
+    }
 }

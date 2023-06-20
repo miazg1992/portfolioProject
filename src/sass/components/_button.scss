@@ -1,9 +1,16 @@
+@import "mixins";
+
 .btn-rounded {
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+
     position: relative;
     padding: 1rem 4.5rem 1rem 1.2rem;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0;
     border: 0.1rem solid $white;
+    background-color: $white;
 
     span {
         position: absolute;
@@ -14,5 +21,19 @@
         right: 5px;
         transform: translateY(-50%);
         border-radius: 50%;
+
+        i {
+            color: $white;
+
+        }
+    }
+
+    &:hover {
+        @include gradient;
+        color: $white;
+
+        span {
+            background-color: rgba($color: #000000, $alpha: 0.6);
+        }
     }
 }

@@ -7,7 +7,8 @@
   <title>Doman's Boilerplate for React applications</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
       <a href="" class="navbar-brand">
         Wioletta Miazga
       </a>
-      <p class="text-muted">Strony internetowe skrojone na miarę</p>
+
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,173 +51,235 @@
     </div>
 
   </nav>
-  <header class="mt-4 ">
-    <div class="header-bg p-5">
+
+
+  <header id="home" class="mt-5 intro-section">
+    <div class="header-bg ">
       <div class="container">
-        <h1 class="display-4">Welcome to good shop</h1>
-        <p>You can find there a lot of goods.</p>
-        <button class="btn btn-primary mt-3 text-white ">Click to see</button>
+        <div class="row">
+          <div class="col-md-6 ">
+            <h1 class="display-4 display-4--intro">Strony internetowe</h1>
+            <p class="text-white">Projekt i wykonanie. Strony WWW szyte na miarę</p>
+            <button class="rounded-pill btn-rounded">
+              Zobacz więcej
+              <span>
+                <i class="fas fa-phone-alt"></i>
+              </span>
+            </button>
+          </div>
+          <div class="col-md-6 intro-section  ">
+            <img src="assets/coding.png" alt="">
+            <span>
+              <i class="fas fa-phone-alt"></i>
+            </span>
+            <span class="border-animation border-animation--border-1"></span>
+            <span class="border-animation border-animation--border-2"></span>
+
+          </div>
+
+
+
+        </div>
       </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#ffffff" fill-opacity="1"
+        d="M0,160L48,170.7C96,181,192,203,288,176C384,149,480,75,576,80C672,85,768,171,864,186.7C960,203,1056,149,1152,144C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
 
   </header>
 
-
-  <h1 class="text-muted">B2</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit similique ex voluptates ea necessitatibus dolor
-    doloremque, nihil atque voluptatem labore tempora repellendus laudantium sed quis magnam facere, nam, vitae
-    assumenda.</p>
-  <h1 class="shadow-lg">B2</h1>
-  <button class="btn bg-primary">Klik</button>
-  <div class="accordion" id="accordionExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-          aria-expanded="true" aria-controls="collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+  <div class="container">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance,
+            as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-          aria-expanded="false" aria-controls="collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+            plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance,
+            as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
-          adds the appropriate classes that we use to style each element. These classes control the overall appearance,
-          as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-          overriding our default variables. It's also worth noting that just about any HTML can go within the
-          <code>.accordion-body</code>, though the transition does limit overflow.
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin
+            adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance,
+            as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
         </div>
       </div>
     </div>
   </div>
 
 
+  <section id="portfolio" class="portfolio">
+    <div class="container ">
+      <div class="row text-center mt-5">
+        <h1 class="display-3 fw-bold text-capitalize ">Realizacje</h1>
+        <div class="heading-line"></div>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi ipsam nulla tempora dolorum
+          minima quisquam rem expedita. Ipsam debitis laborum voluptatem animi repellendus. Sit nesciunt est, dolorem
+          rem fugiat autem.</p>
+      </div>
+      <!-- filter Buttons -->
+      <div class="row mt-5 mb-4 gap-3 text-center">
+        <div class="col-12">
+          <button class="btn btn-outline-primary" type="">All</button>
+          <button class="btn btn-outline-primary" type="">Website</button>
+          <button class="btn btn-outline-primary" type="">design</button>
+          <button class="btn btn-outline-primary" type="">Szukaj</button>
+        </div>
+      </div>
 
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus. Lorem
-  ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus ea, in iure dicta sint repellendus eveniet
-  nam
-  asperiores praesentium! Quibusdam enim libero aperiam in quod maxime repellendus corrupti autem voluptatibus.
+      <!-- start portfolio item -->
 
 
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-1.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 1</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-2.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 2</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-3.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 3</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-4.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 4</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-5.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 5</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-6.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 6</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-7.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 7</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-8.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 8</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="assets/portfolio/p-9.jpg" alt="" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Project name 9</h4>
+                <p>opis</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 
